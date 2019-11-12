@@ -1,0 +1,36 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.task {
+	margin-left: 8px;
+}
+
+.details {
+	background-color: #EFF3EF;
+	border-radius: 8px;
+	border: 1px solid rgb(140, 140, 140);
+}
+
+.form {
+	width: 500px;
+}
+
+.label {
+	background-color: #465881;
+	color: white;
+	border-radius: 8px;
+	padding: 8px;
+	text-align: center;
+	font-weight: 700;
+	width: 100px;
+}
+
+.task-edit {
+	margin: 8px;
+	border: 1px solid rgb(140, 140, 140);
+	border-radius: 8px;
+	background-color: #EFF3EF;
+	width: 150px;
+	color: black;
+}

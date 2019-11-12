@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="">
+		<div class="d-flex justify-content-between">
+			<div class="task-info">
+				<h1><%= @task.title.capitalize %></h1>
+			</div>
+			<div class="task-edit d-flex align-items-center justify-content-center">
+				<%= link_to edit_task_path do %>
+					<div class=""><i class="fas fa-pencil-alt"></i> Edit this task</button>
+				<% end %>
+			</div>
+		</div>
+	</div>
+		<div class="details py-4 pl-4">
+			<div><%= @task.details.capitalize %></div>
+		</div>
+		<% if @task.completed %>
+			<div class="my-3">
+				<i class="far fa-check-square"></i> This task is completed
+			</div>
+		<% else %>
+			<div class="my-3">
+				<i class="far fa-square"></i> This task is not completed yet
+			</div>
+		<% end %>
+		<div>
+			<%= link_to 'Back to tasks', tasks_path, class: "btn btn-primary" %>
+		</div>
+</div>
